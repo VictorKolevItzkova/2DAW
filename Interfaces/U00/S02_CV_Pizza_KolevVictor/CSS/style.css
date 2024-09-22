@@ -1,0 +1,17 @@
+body{
+	background-color: #B8C7C5;
+	font-family: arial;
+}
+#insta,#tweet{
+	text-decoration: none;
+}
+
+#social{
+	margin-top: 1%;
+}
+
+footer{
+	background-color: #455A64;
+	text-align: center;
+	padding: 1%;
+}
