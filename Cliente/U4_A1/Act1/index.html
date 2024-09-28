@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let message=prompt("Introduce a message:")
+        message=message.toUpperCase()
+        let key=Number(prompt("Introduce the number of movements:"))
+        let arr=[]
+        let messageFinal=""
+
+        for(let i=0;i<message.length;i++){
+            if(message.charCodeAt(i)>=90){
+                messageFinal+=String.fromCharCode((message.charCodeAt(i)+key)-26)
+            }else{
+                messageFinal+=String.fromCharCode((message.charCodeAt(i)+key))
+            }
+        }
+
+        alert(messageFinal)
+    </script>
+</body>
+</html>

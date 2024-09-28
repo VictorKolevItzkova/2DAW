@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let message=prompt("Introduce a message:")
+        let key=prompt("Introduce a numeric text key:")
+        let j=0
+        let arr=[]
+        let messageFinal=""
+
+        for(let i=0;i<message.length;i++){
+            if(key[j]==key[key.length-1]){
+                messageFinal+=String.fromCharCode((message.charCodeAt(i)+parseInt(key[j])))
+                j=0
+            }else{
+                messageFinal+=String.fromCharCode((message.charCodeAt(i)+parseInt(key[j])))
+                j++
+            }
+        }
+
+        alert(messageFinal)
+    </script>
+</body>
+</html>
